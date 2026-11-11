@@ -1,0 +1,4 @@
+2026-11-11 12:45:10.000 [switch] mti=0200 request sent to host-d stan=000321 rrn=631512000321 amount=4200
+2026-11-11 12:45:10.005 [switch] stan=000321 connection refused by host-d 10.0.4.21:5000
+2026-11-11 12:45:10.006 [switch] stan=000321 no fallback route for BIN 506100
+2026-11-11 12:45:10.010 [switch] stan=000321 rc=91 returned to terminal

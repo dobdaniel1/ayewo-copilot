@@ -1,0 +1,5 @@
+2026-11-11 09:30:00.120 [terminal TERM0001] purchase started amount=10000 pan=4111111111111111 stan=000123
+2026-11-11 09:30:00.180 [switch] mti=0200 request sent to host-a stan=000123 rrn=631509000123 amount=10000
+2026-11-11 09:30:30.190 [switch] stan=000123 host-a timed out after 30000 ms
+2026-11-11 09:30:30.200 [switch] stan=000123 rc=91 returned to terminal
+2026-11-11 09:30:30.420 [terminal TERM0001] stan=000123 transaction failed, receipt printed: DECLINED

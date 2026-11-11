@@ -1,0 +1,5 @@
+2026-11-11 10:12:04.001 [terminal TERM0007] stan=000456 card read, chip, track2=5555555555554444=28122011234567
+2026-11-11 10:12:04.050 [switch] mti=0200 request sent stan=000456 rrn=631510000456 amount=250000
+2026-11-11 10:12:05.310 [host-b] stan=000456 authorised rc=00 auth=8F21A3
+2026-11-11 10:12:05.330 [switch] mti=0210 response received stan=000456 rc=00
+2026-11-11 10:12:05.900 [terminal TERM0007] stan=000456 MAC verification error on response, transaction failed

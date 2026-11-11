@@ -1,0 +1,29 @@
+{
+  "design": [
+    {
+      "name": "payment switch spec",
+      "spec": "examples/switch_requirements.md",
+      "boundary_values": {
+        "REQ-002": ["0.99", "1.00", "5000000.00", "5000000.01"],
+        "REQ-004": ["5", "6", "7"]
+      },
+      "needs_negative": ["REQ-002", "REQ-003", "REQ-006"],
+      "needs_security": ["REQ-007"],
+      "expected_gaps": {
+        "REQ-009": ["ambiguous"],
+        "REQ-011": ["ambiguous"],
+        "REQ-012": ["missing_acceptance_criteria", "ambiguous"],
+        "REQ-013": ["untestable"],
+        "REQ-014": ["incomplete"]
+      },
+      "no_gaps": ["REQ-001", "REQ-002", "REQ-003", "REQ-004", "REQ-006", "REQ-010"]
+    }
+  ],
+  "triage": [
+    {"log": "examples/logs/timeout_no_reversal.log", "top": "timeout_without_reversal", "must_not": ["issuer_decline"]},
+    {"log": "examples/logs/terminal_host_mismatch.log", "top": "terminal_host_mismatch", "must_not": ["issuer_decline"]},
+    {"log": "examples/logs/duplicate_stan.log", "top": "duplicate_transmission", "must_not": ["issuer_decline"]},
+    {"log": "examples/logs/host_down_failover.log", "top": "host_unavailable", "must_not": ["issuer_decline"]},
+    {"log": "examples/logs/issuer_decline.log", "top": "issuer_decline", "must_not": ["host_unavailable", "timeout_without_reversal"]}
+  ]
+}

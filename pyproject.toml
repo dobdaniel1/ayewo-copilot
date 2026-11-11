@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ayewo-copilot"
+version = "0.1.0"
+description = "Turn requirements into traceable test cases and triage failed card transactions, offline or with Claude"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Daniel Olawepo" }]
+dependencies = ["anthropic>=2.8,<3", "pydantic>=2.7,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
+
+[project.scripts]
+ayewo = "ayewo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["tests"]
+addopts = "--cov=ayewo --cov-report=term-missing --cov-fail-under=90"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+# Long string literals are fine; the formatter keeps code within line-length.
+ignore = ["E501"]

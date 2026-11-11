@@ -1,0 +1,4 @@
+2026-11-11 13:05:00.000 [terminal TERM0002] stan=000654 contactless tap amount=10051
+2026-11-11 13:05:00.040 [switch] mti=0200 request sent stan=000654 rrn=631513000654 amount=10051
+2026-11-11 13:05:00.700 [switch] mti=0210 response received stan=000654 rc=51
+2026-11-11 13:05:00.900 [terminal TERM0002] stan=000654 displayed: DECLINED insufficient funds

@@ -1,0 +1,5 @@
+2026-11-11 11:00:01.000 [switch] mti=0200 request sent stan=000789 rrn=631511000789 amount=7500
+2026-11-11 11:00:01.900 [switch] mti=0210 response received stan=000789 rc=00
+2026-11-11 11:00:09.000 [terminal TERM0003] stan=000789 no confirmation shown, cashier pressed retry
+2026-11-11 11:00:09.100 [switch] mti=0200 request sent stan=000789 rrn=631511000790 amount=7500
+2026-11-11 11:00:09.950 [switch] mti=0210 response received stan=000789 rc=00
